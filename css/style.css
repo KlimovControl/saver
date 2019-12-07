@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Proxima Nova', sans;
+}
+
+.notification {
+    height: 50px;
+    color: #8d2525;
+    background-color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
