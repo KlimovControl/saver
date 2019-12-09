@@ -6,24 +6,71 @@
 	justify-content: center
 	align-items: center 
 	height: 50px 
-	color: #ffffff 
+	color: #ffffff
 	background-color: #000000 
 	font-size: 16px 
 	font-weight: 400 
 	text-align: center
+	span
+		margin: 0 auto
+	&:hover
+		text-decoration: none
+		color: #ffffff
 	p 
 		margin-top: 14px
 	&_logo
 		height: 20px
 	.button
-		text-decoration: none
 		margin: 0 0 0 30px
 		height: 30px
 		width: 250px
 		color: #000000
 		background-color: white
-		border-radius: 10px
-.presentation_block
-	text-align: center
-	max-height: 600px
-	background-color: #ac8080
+		border-radius: 17px
+header
+	padding: 15px 0 15px
+.menu
+	display: flex
+	justify-content: space-between
+	max-width: 1200px
+	height: 40px
+	margin: 0 auto
+	&_logo
+		img
+			height: 40px
+	&_list
+		display: flex
+		justify-content: space-between
+		margin: 0
+		list-style-type: none
+		a 
+			color: #686868
+			font-weight: 700
+			&:hover
+				color: #000000
+				
+	&_button
+		display: flex
+		justify-content: space-evenly
+		align-items: center
+		height: 40px
+		width: 140px
+		color: #686868
+		font-weight: 700
+		border-color: #000000
+		border-radius: 5px
+		padding: 0 10px
+		img
+			height: 15px
+		&_img
+			height: 15px
+			width: 15px
+			background-image: url(../img/users.svg)
+
+			vertical-align: center
+		&:hover
+			background-image: url()
+			background-color: rgb(0, 188, 135);
+			color: #ffffff
+
+		
