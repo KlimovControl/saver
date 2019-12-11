@@ -13,7 +13,11 @@
 	font-weight: 400 
 	text-align: center
 	span
-		margin: 0 auto
+		display: block
+		margin: 5px auto
+		text-transform: uppercase
+		font-weight: 500
+		font-size: 15px
 	&:hover
 		text-decoration: none
 		color: #ffffff
@@ -22,9 +26,9 @@
 	&_logo
 		height: 20px
 	.button
-		margin: 0 0 0 30px
+		margin: 0 0 0 25px
 		height: 30px
-		width: 250px
+		width: 260px
 		color: #000000
 		background-color: white
 		border-radius: 17px
@@ -33,12 +37,13 @@ header
 .menu
 	display: flex
 	justify-content: space-between
+	align-content: center
 	max-width: 1200px
 	height: 40px
 	margin: 0 auto
 	&_logo
 		img
-			height: 40px
+			height: 30px
 	&_list
 		display: flex
 		justify-content: space-between
@@ -70,5 +75,31 @@ header
 	max-width: 1200px
 	height: 500px
 	background-color: #e5f0c0
+.toapp
+	padding: 100px 0 90px
+	display: block
+	width: 600px
+	h1
+		font-weight: 700
+	&_text
+		margin: 60px 0 30px
+		font-size: 20px
+		font-weight: 400
+	&_button
+		display: flex
+		justify-content: space-evenly
+		align-items: center
+		height: 45px
+		width: 150px
+		color: #ffffff
+		background-color: rgb(0, 188, 135);
+		font-weight: 700
+		border-radius: 5px
+		padding: 0 10px	
+		font-size: 15px
+		&:hover
+			border-color: #00BC87
+			color: #ffffff
+
 
 		
