@@ -2,6 +2,9 @@
 	box-sizing: border-box 
 	font-family: 'Proxima Nova', sans
 
+._width
+	min-width: 1360px
+
 .notification
 	display: flex
 	justify-content: center
@@ -12,12 +15,14 @@
 	font-size: 16px 
 	font-weight: 400 
 	text-align: center
+	text-decoration: none
 	span
 		display: block
 		margin: 5px auto
 		text-transform: uppercase
 		font-weight: 700
 		font-size: 14px
+		text-decoration: none
 		
 	p 
 		margin-top: 14px
@@ -30,6 +35,12 @@
 		color: #000000
 		background-color: white
 		border-radius: 17px
+		&:hover
+			border-color:  rgb(0, 188, 135);
+			background-color: rgb(0, 188, 135);
+			color: #ffffff
+	
+
 header
 	padding: 15px 0 15px
 .menu
@@ -63,12 +74,18 @@ header
 		color: #686868
 		font-weight: 700
 		border-radius: 5px
-		padding: 0 10px	
+		padding: 0 10px
 		font-size: 15px
 		&:hover
 			border-color:  rgb(0, 188, 135);
 			background-color: rgb(0, 188, 135);
 			color: #ffffff
+
+.learn_btn
+	margin-top: 30px
+	width: 100%
+
+
 .app_present
 	padding: 100px 0 70px
 	display: flex
@@ -114,20 +131,105 @@ header
 			width: 10%
 			height: 10%
 .capab
-	padding: 80px
-	height: 500px
+	padding: 40px 0 60px
+	height: 400px
 	background-color:  rgb(240, 240, 240)
 	&_collect
 		display: flex
 		justify-content: space-between
-		allgn-items: center
-		&_item
-			height: 370px
-			width: 270px
-			padding: 30px 20px 30px
-			background-color: #ffffff 
+		margin: 0 50px
+		&_item   
+			height: 300px
+			width: 260px
+			padding: 20px 15px 20px
+			&:hover
+				background-color: #fff
+				transition: 0.5s
+				
 			.but
+				display: flex
+				justify-content: center
+				align-items: center
+				color: white
 				background-color: black	
-				height: 20px
-				width: 30px
-				border-radius: 10px	
+				height: 30px
+				width: 46px
+				border-radius: 19px
+			.green_c
+				background-color: $avogreen
+			.pink_c
+				background-color: $avopink
+			.blue_c
+				background-color: $avoblue
+			.yellow_c
+				background-color: $avoyellow
+	h2
+		font-size: 25px
+		margin-top: 30px
+		font-weight: 600
+	h4
+		font-size: 17px
+		margin-top: 30px
+		font-weight: 600
+		color: #747272
+.f_view
+	&_descr
+		display: flex
+		justify-content: space-between
+		margin: 0 0 16px
+		&_text
+			width: 500px	
+	h2
+		display: block
+		margin-top: 70px
+		font-size: 22px
+		font-weight: 600
+		p
+			display: block
+			font-size: 18px
+			font-weight: 600
+			color: #747272
+	.platform_logos
+			display: flex
+			justify-content: space-between
+			width: 40%
+			font-size: 40px
+			color: #747272
+	img
+		margin-top: 50px
+		width: 100%
+
+.dev_blog
+	margin-top: 100px
+	display: flex
+	justify-content: center
+	&_bg
+		height: 600px
+		background: url('../img/dev_blog_bg.jpg') center center/ cover no-repeat
+		h2
+			padding: 50px 0 20px
+			color: #ffffff
+			text-align: center
+			font-weight: 600
+		p
+			color: #ffffff
+			text-align: center
+			font-weight: 600
+		.story_blocks
+			display: flex
+			justify-content: space-between
+			padding: 40px 120px
+			&_item
+				width: 300px
+				height: 200px
+			.dev1
+				background: url('../img/dev_avoman.png') center center/ cover no-repeat
+			.dev2
+				background: url('../img/dev_petrov.png') center center/ cover no-repeat
+			.dev3
+				background: url('../img/dev_taylor.png') center center/ cover no-repeat
+
+
+	
+	
+
