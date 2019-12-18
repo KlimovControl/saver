@@ -4,7 +4,9 @@
 
 ._width
 	min-width: 1360px
-
+.all_page
+	a
+		text-decoration: none
 .notification
 	display: flex
 	justify-content: center
@@ -23,9 +25,9 @@
 		font-weight: 700
 		font-size: 14px
 		text-decoration: none
-		
 	p 
 		margin-top: 14px
+
 	&_logo
 		height: 20px
 	.button
@@ -220,15 +222,50 @@ header
 			justify-content: space-between
 			padding: 40px 120px
 			&_item
-				width: 300px
-				height: 200px
-			.dev1
-				background: url('../img/dev_avoman.png') center center/ cover no-repeat
-			.dev2
-				background: url('../img/dev_petrov.png') center center/ cover no-repeat
-			.dev3
-				background: url('../img/dev_taylor.png') center center/ cover no-repeat
+				color: rgba(0, 188, 135,1)
+				a
+					text-decoration: none
+				.cover_pic
+					height: 100%
+					width: 100%
+					background: #000
+					z-index: 25
+				
+				img
+					width: 330px
+				.cover
+					display: flex
+					justify-content: space-evenly
+					align-items: center
+					position: relative
+					top: -180px
+					width: 330px
+					height: 180px
+					color: rgba(0, 188, 135,0)
+					font-weight: 700
+					text-transform: uppercase
+					text-decoration: none
+					transition: 0.7s
+					&:hover
+						color: #ffffff
+						background-color: rgba(0, 188, 135,0.8)
+						transition: 0.7s
+				.story_btn
+					width: 160px
+					height: 40px
+					background-color: $avoyellow 
+					a
+						position: relative
+						top: -170px
+						color: #ffffff
+						font-size: 12px
+						text-transform: uppercase
+						font-weight: 700
+						
 
+						
+
+						
 
 	
 	
