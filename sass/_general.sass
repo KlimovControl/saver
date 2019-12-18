@@ -27,7 +27,6 @@
 		text-decoration: none
 	p 
 		margin-top: 14px
-
 	&_logo
 		height: 20px
 	.button
@@ -202,14 +201,14 @@ header
 		width: 100%
 
 .dev_blog
-	margin-top: 100px
+	margin-top: 80px
 	display: flex
 	justify-content: center
 	&_bg
 		height: 600px
 		background: url('../img/dev_blog_bg.jpg') center center/ cover no-repeat
 		h2
-			padding: 50px 0 20px
+			padding: 40px 0 20px
 			color: #ffffff
 			text-align: center
 			font-weight: 600
@@ -222,51 +221,66 @@ header
 			justify-content: space-between
 			padding: 40px 120px
 			&_item
-				color: rgba(0, 188, 135,1)
-				a
+				width: 330px
+				position: relative
+				color: #ffffff
+				&_img
 					text-decoration: none
-				.cover_pic
-					height: 100%
-					width: 100%
-					background: #000
-					z-index: 25
-				
-				img
-					width: 330px
-				.cover
+					img
+						width: 330px
+					&_cover
+						display: flex
+						justify-content: space-evenly
+						align-items: center
+						position: absolute
+						top: 0
+						width: 330px
+						height: 180px
+						color: rgba(0, 188, 135,0)
+						font-weight: 700
+						text-transform: uppercase
+						text-decoration: none
+						transition: 0.7s
+						&:hover
+							color: #ffffff
+							background-color: rgba(0, 188, 135,0.8)
+							transition: 0.7s
+				&_btn
+					margin: 15px 0 13px
 					display: flex
 					justify-content: space-evenly
 					align-items: center
-					position: relative
-					top: -180px
-					width: 330px
-					height: 180px
-					color: rgba(0, 188, 135,0)
+					width: 160px
+					height: 25px
+					font-size: 13px
+					border-radius: 16px
 					font-weight: 700
 					text-transform: uppercase
 					text-decoration: none
-					transition: 0.7s
-					&:hover
-						color: #ffffff
-						background-color: rgba(0, 188, 135,0.8)
-						transition: 0.7s
-				.story_btn
-					width: 160px
-					height: 40px
-					background-color: $avoyellow 
-					a
-						position: relative
-						top: -170px
-						color: #ffffff
-						font-size: 12px
-						text-transform: uppercase
-						font-weight: 700
-						
+					color: #ffffff
+					background-color: $avoyellow
+				.wrapper_for_text
+					height: 100px
+				&_text
+					font-size: 22px
+					font-weight: 600
+					line-height: 12px
+					color: #ffffff
+				&_footer
+					display: flex
+					&_author
+						display: flex
+						width: 50%
+					&_avatar
+						margin-right: 10px
+						width: 25px
+						border-radius: 50%
+						font-weight: 300
+					.footer_date
+						position: absolute
+						right: 0
+						font-weight: 300
 
-						
-
-						
-
-	
-	
+					
+				
 
