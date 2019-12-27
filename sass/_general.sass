@@ -1,6 +1,10 @@
 * 
 	box-sizing: border-box 
 	font-family: 'Proxima Nova', sans
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
 
 ._width
 	min-width: 1360px
@@ -27,6 +31,7 @@
 		text-decoration: none
 	p 
 		margin-top: 14px
+		color: #fff
 	&_logo
 		height: 20px
 	.button
@@ -40,8 +45,6 @@
 			border-color:  rgb(0, 188, 135);
 			background-color: rgb(0, 188, 135);
 			color: #ffffff
-	
-
 header
 	padding: 15px 0 15px
 .menu
@@ -56,7 +59,7 @@ header
 			height: 30px
 	&_list
 		display: flex
-		justify-content: space-between
+		justify-content: space-betweens
 		margin: 0
 		list-style-type: none
 		a 
@@ -127,7 +130,6 @@ header
 		&_item
 			width: 12%
 			height: 12%
-	
 		&_item .pwc_syile
 			width: 10%
 			height: 10%
@@ -200,12 +202,14 @@ header
 		margin-top: 50px
 		width: 100%
 
+.gray 
+	background-color: $avogray
 .dev_blog
-	margin-top: 80px
+	margin: 80px 0
 	display: flex
 	justify-content: center
 	&_bg
-		height: 600px
+		height: 750px
 		background: url('../img/dev_blog_bg.jpg') center center/ cover no-repeat
 		h2
 			padding: 40px 0 20px
@@ -240,11 +244,11 @@ header
 						font-weight: 700
 						text-transform: uppercase
 						text-decoration: none
-						transition: 0.7s
+						transition: 0.3s
 						&:hover
 							color: #ffffff
 							background-color: rgba(0, 188, 135,0.8)
-							transition: 0.7s
+							transition: 0.4s
 				&_btn
 					margin: 15px 0 13px
 					display: flex
@@ -259,6 +263,8 @@ header
 					text-decoration: none
 					color: #ffffff
 					background-color: $avoyellow
+				.gray
+					background-color: $avogray
 				.wrapper_for_text
 					height: 100px
 				&_text
@@ -267,6 +273,7 @@ header
 					line-height: 12px
 					color: #ffffff
 				&_footer
+					margin-top: 15px
 					display: flex
 					&_author
 						display: flex
@@ -280,7 +287,52 @@ header
 						position: absolute
 						right: 0
 						font-weight: 300
+.green_btn
+	margin-top: 30px
+	display: flex
+	justify-content: center
+	text-decoration: none
+	&_text
+		font-size: 14px
+		width: 330px
+		color: #ffffff
+		text-transform: uppercase
+		background-color: rgb(0, 188, 135)
+		border-color:  rgb(0, 188, 135)		
+		&:hover
+			text-decoration: none	
+			background-color:  rgb(66, 224, 180)
+		
 
-					
-				
+.try_now
+	position: relative
+
+	&_bg
+		background-color: #e7e7e7
+		padding: 50px
+		height: 600px
+	&_content
+		position: absolute
+		top: -40px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		img
+			width: 35%
+	&_text
+		display: flex
+		flex-direction: column
+		width: 300%
+		align-items: center
+		h2 
+			text-align: center
+			font-weight: 400
+			font-size: 40px
+		p
+			font-size: 18px
+			font-weight: 600
+			text-align: center
+			color: #686868
+		.btn_size
+			width: 220px
 
